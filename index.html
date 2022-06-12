@@ -1,0 +1,531 @@
+<html>
+
+<head>
+  <title>Home | SciTech Portfolio</title>
+   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" src="LogoWhite.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style type="text/css">
+
+html, body{
+   max-width: 100vw;
+ overflow-x:hidden;
+  border:none;
+  margin:0;
+  z-index:1;
+  text-align: center;
+background-color: white;
+
+}
+
+#logo{
+text-align:center;
+  width:140px;
+  height:auto;
+position: fixed;
+top:30px;
+left:0px;
+z-index:3;
+color:black;
+}
+#logo1{
+text-align:center;
+width:15vw;
+height:auto;
+position: absolute;
+top:65%;
+left:82%;
+z-index:3;
+}
+
+.topnav {
+  background-color:;
+}
+
+.topnav .a {
+  float: left;
+  text-align: center;
+  color: black;
+  width:10%;
+  position: relative;
+  left:100px;
+  margin-left:20px;
+  padding: 40px;
+
+margin-right: 10px;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .a:hover {
+
+  color: #a3a3a3;
+
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+  .topnav .a:not(:first-child) {display: none;}
+  .topnav .a.icon {
+    float: right;
+    display: block;
+  }
+}/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }}
+
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+	position:absolute;
+  top:10;
+	left:84%;
+
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: black;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+
+}
+#bar3{
+	transform: translateY(4px);
+
+}
+.nav{
+	color:black;
+	text-decoration: none;
+		position:absolute;
+	left:82%;
+
+		top:80;
+}
+
+.nav li{
+	list-style: none;
+  text-decoration: none;
+	padding: 16px 0;
+}
+.nav{
+  text-decoration: none;
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+
+
+.change .bar{
+	background-color: red;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+
+}
+.change{
+	display: block;
+}
+@media screen and (min-width: 701px) {
+  #menu-bar {display: contents;
+  float:right;}
+
+}
+@media screen and (min-width: 701px) {
+  #menu-bar {display: none;
+}}
+
+
+.inline-photo {
+
+  border-radius: 1em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  margin: 2em auto;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(0deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+  opacity .3s .25s ease-out;
+
+
+
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+
+header {
+  opacity: 0;
+  transition: opacity .5s .25s ease-out;
+}
+
+header.is-visible {
+  opacity: 1;
+}
+
+.main-photo {
+  transform: scale(.8);
+}
+
+.heading {
+  transform: translate(-50%, calc(-50% + 1em));
+}
+
+.is-visible .main-photo {
+  transform: none;
+}
+
+.is-visible .heading {
+  transform: translate(-50%, -50%);
+}
+
+.main-photo,
+.heading {
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              filter 10s 2s ease-out;
+  will-change: transform;
+}
+
+#title1{
+  color:black;
+  text-align: center;
+  position: relative;
+  width:25vw;
+  height:auto;
+  position:absolute;
+  top:150px;
+  left:10%;
+  font-family: georgia;
+  z-index:2;
+  font-size: 2vw;
+
+}
+#title{
+  color:white;
+  text-align: center;
+  position: relative;
+  width:30vw;
+  height:auto;
+    background-color: black;
+  position:absolute;
+  top:5%;
+  left:110%;
+  font-family: georgia;
+  z-index:2;
+  font-size: 2vw;
+padding:10px;
+}
+#title2{
+  color:white;
+  text-align: center;
+  position: relative;
+  width:30vw;
+  height:auto;
+  position:absolute;
+  top:33%;
+  left:110%;
+  font-family: georgia;
+  z-index:2;
+  font-size: 2vw;
+    background-color: black;
+    padding:10px;
+
+}
+#title3{
+  color:white;
+  text-align: center;
+  position: relative;
+  width:30vw;
+  height:auto;
+  position:absolute;
+  top:50%;
+  left:110%;
+  font-family: georgia;
+  z-index:2;
+  font-size: 2vw;
+  background-color: black;
+  padding:10px;
+
+}
+#title4{
+  color:white;
+  text-align: center;
+  position: relative;
+  width:35vw;
+  height:auto;
+  position:absolute;
+  top:30px;
+  left:32.5%;
+  font-family: georgia;
+  z-index:2;
+  font-size: 3vw;
+  background-color: black;
+  padding:10px;
+
+}
+
+.content{
+
+position: absolute;
+left:20%;
+top:1vw;
+width:60%;
+height:0vw;
+
+
+
+}
+.content1{
+
+position: absolute;
+top:68vw;
+left:0;
+
+width:50%;
+height:50vw;
+background-color: white;
+
+
+
+
+}
+.BG{
+position: absolute;
+height:68vw;
+width:100vw;
+background-color: white;
+
+
+}
+.BG1{
+position: absolute;
+height:55vw;
+width:50vw;
+top:65vw;
+background-color: black;
+border-radius: 10%;
+left:45%;
+
+
+}
+
+
+#image{
+  position: absolute;
+  top:80px;
+  left:8%;
+  width:50vw;
+  height:30vw;
+
+
+
+}
+#image1{
+  position: absolute;
+  top:0;
+  left:20%;
+  width:30vw;
+  height:40vw;
+  border-color: black;
+  border-top: 5px;
+  z-index:2;
+
+
+
+}
+#image2{
+  position: absolute;
+  top:15.5vw;
+  left:76%;
+  width:5vw;
+  height:5vw;
+
+
+
+
+
+}.social{
+
+background-color: black;
+width:100%;
+height:24vw;
+position: absolute;
+top:150vw;
+color:WHITE;
+
+
+}
+.learnmore{
+
+background-color: white;
+width:100%;
+height:30vw;
+position: absolute;
+top:120vw;
+
+
+
+}#learnmore{
+  position: absolute;
+  top:40%;
+  left: 25%;
+  text-align: center;
+color:black;
+width:50%;
+font-size: 3vw;
+border-width:4px;
+border-style: solid;
+border-radius: 10px;
+border-color: black;
+background-color:white;
+
+}
+
+
+
+
+</style>
+  <body >
+
+
+<div class="BG">
+</div>
+
+<div class="topnav">
+  <a  href="Index.html"><img id="logo" src="LogoBlack.png"></a>
+  <a class="a"href="Index.html">Home</a>
+  <a class="a"href="SciTechAbout.html">About</a>
+  <a class="a"href="SciTechPortfolio.html"> Portfolio</a>
+  <a class="a"href="SciTechContact.html">Contact</a>
+</div>
+
+
+<div id="menu-bar">
+    <div id="menu" onclick="onClickMenu()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="SciTechAbout.html">About</a></li>
+      <li><a href="SciTechPortfolio.html">Portfolio</a></li>
+      <li><a href="SciTechContact.html">Contact</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+</div>
+  <div class="content">
+  <p id="Title1" class="inline-photo show-on-scroll">Hi, I'm Creator <br /> Thanh G. Diep! </p>
+  <image id="image" src="portrait.jpg" class="inline-photo show-on-scroll"></image>
+</div>
+
+
+<div class="content1">
+<p id="Title" class="inline-photo show-on-scroll">I am a student currently enrolling in the SciTech Program at Port Credit Secondary School.</p>
+<p id="Title2" class="inline-photo show-on-scroll">I believe in patience, diligence, and preciseness. </p>
+<p id="Title3" class="inline-photo show-on-scroll">I always strive to accomplish my goals, and I have never stopped at any point of my life.</p>
+<image id="image1" src="Goals.png" class="inline-photo show-on-scroll"></image>
+</div>
+<div class="BG1" class="inline-photo show-on-scroll"></div>
+<div class="learnmore" class="inline-photo show-on-scroll">
+
+<a href="SciTechAbout.html"><button id="learnmore" class="inline-photo show-on-scroll">Learn More</button></a>
+
+</div>
+<div class="social">
+<P id="Title4"> Connect with me on Instagram!</P>
+<a href="https://www.instagram.com/thanhgdiep/"><image id="image2" src= "https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-3.png"></image></a>
+<a href="Index.html"><image id="Logo1" src="LogoWhite.png"</a>
+</div>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+	document.getElementById("nav").classList.toggle("change");
+
+	document.getElementById("menu-bg").classList.toggle("change-bg");
+
+}
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/10)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+
+</script>
