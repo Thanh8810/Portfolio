@@ -26,7 +26,7 @@ font-family: verdana;
 text-align:center;
   width:140px;
   height:auto;
-position: fixed;
+position: absolute;
 top:30px;
 left:0px;
 z-index:3;
@@ -250,8 +250,8 @@ padding:10px;
   width:30vw;
   height:auto;
   position:absolute;
-  top:33%;
-  left:110%;
+  top:5%;
+  left:5%;
 
   z-index:2;
   font-size: 2vw;
@@ -266,8 +266,8 @@ padding:10px;
   width:30vw;
   height:auto;
   position:absolute;
-  top:50%;
-  left:110%;
+  top:5%;
+  left:35%;
 
   z-index:2;
   font-size: 2vw;
@@ -279,18 +279,45 @@ padding:10px;
   color:white;
   text-align: center;
   position: relative;
-  width:35vw;
+  width:30vw;
   height:auto;
   position:absolute;
-  top:30px;
-  left:32.5%;
-
+  top:5%;
+  left:65%;
   z-index:2;
-  font-size: 3vw;
-  background-color: black;
+  font-size: 2vw;
   padding:10px;
 
 }
+#title5{
+  color:white;
+  text-align: center;
+  position: relative;
+  width:30vw;
+  height:auto;
+  position:absolute;
+  top:25%;
+  left:35%;
+  z-index:2;
+  font-size: 3vw;
+  padding:10px;
+
+}
+#title6{
+  color:black;
+  text-align: center;
+  position: relative;
+  width:80vw;
+  height:auto;
+  position:absolute;
+  top:10%;
+  left:10%;
+  z-index:2;
+  font-size: 2vw;
+  padding:10px;
+
+}
+
 
 .content{
 
@@ -300,21 +327,25 @@ top:1vw;
 width:60%;
 height:0vw;
 
-
-
 }
 .content1{
 
 position: absolute;
 top:68vw;
 left:0;
+width:100%;
+height:60vw;
+background-color: black;
 
-width:50%;
-height:50vw;
+}
+.content2{
+
+position: absolute;
+top:125vw;
+left:0;
+width:100%;
+height:25vw;
 background-color: white;
-
-
-
 
 }
 .BG{
@@ -325,18 +356,6 @@ background-color: white;
 
 
 }
-.BG1{
-position: absolute;
-height:55vw;
-width:50vw;
-top:65vw;
-background-color: black;
-border-radius: 10%;
-left:45%;
-
-
-}
-
 
 #image{
   position: absolute;
@@ -345,22 +364,8 @@ left:45%;
   width:50vw;
   height:30vw;
 
-
-
 }
-#image1{
-  position: absolute;
-  top:0;
-  left:20%;
-  width:30vw;
-  height:40vw;
-  border-color: black;
-  border-top: 5px;
-  z-index:2;
 
-
-
-}
 #image2{
   position: absolute;
   top:15.5vw;
@@ -368,49 +373,17 @@ left:45%;
   width:5vw;
   height:5vw;
 
-
-
-
-
 }.social{
 
 background-color: black;
 width:100%;
 height:24vw;
 position: absolute;
-top:150vw;
+top:200vw;
 color:WHITE;
 
 
 }
-.learnmore{
-
-background-color: white;
-width:100%;
-height:30vw;
-position: absolute;
-top:120vw;
-
-
-
-}#learnmore{
-  position: absolute;
-  top:40%;
-  left: 25%;
-  text-align: center;
-color:black;
-width:50%;
-font-size: 3vw;
-border-width:4px;
-border-style: solid;
-border-radius: 10px;
-border-color: black;
-background-color:white;
-
-}
-
-
-
 
 </style>
   <body >
@@ -455,19 +428,22 @@ background-color:white;
 
 
 <div class="content1">
-<p id="Title" class="inline-photo show-on-scroll">I am a student currently enrolling in the SciTech Program at Port Credit Secondary School.</p>
-<p id="Title2" class="inline-photo show-on-scroll">I believe in patience, diligence, and preciseness. </p>
-<p id="Title3" class="inline-photo show-on-scroll">I always strive to accomplish my goals, and I have never stopped at any point of my life.</p>
-<image id="image1" src="Goals.png" class="inline-photo show-on-scroll"></image>
+  <p id="title2" class="inline-photo show-on-scroll">
+    I am a student in grade nine who is apart of the SciTech Program at Port Credit Secondary School. I was born on August 4, 2007 in Mississauga, Ontario.
+  </p>
+  <p id="title3" class="inline-photo show-on-scroll">
+    I earned my elementary education at Cashmere Avenue Public School.<br />
+    I earned my middle school education at Queen Elizebeth Senior Public School.<br />
+    I am currently enrolling at Port Credit Secondary School to earn my high school education.
+  </p>
+  <p id="title4" class="inline-photo show-on-scroll">
+  I joined the Sci Tech program because I knew ahead of time that by doing so, could help me learn <br />useful skills in the future and have more competetion in class. It would be benefical to join because SciTech students learn more than the regular track students. I was already intrested in the SciTech fields and knew it was a great opportunity. </p>
 </div>
-<div class="BG1" class="inline-photo show-on-scroll"></div>
-<div class="learnmore" class="inline-photo show-on-scroll">
-
-<a href="About.html"><button id="learnmore" class="inline-photo show-on-scroll">Learn More</button></a>
-
+<div class="content2">
+  <p id="title6">In the future, I want to have surpassing grades to be accepted in Waterloo University because the campus is known for their technologies program. After graduating, I want to be hired b y a prestigous company and build my work experience. When I get enough experience, I will create my own company in the technology industry. Though I do not know for certain what my career will be like, I do know I want to work in the technologies sector and make the world a better place. </p>
 </div>
 <div class="social">
-<P id="Title4"> Connect with me on Instagram!</P>
+<P id="Title5"> Connect with me on Instagram!</P>
 <a href="https://www.instagram.com/thanhgdiep/"><image id="image2" src= "https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-3.png"></image></a>
 <a href="index.html"><image id="Logo1" src="LogoWhite.png"</a>
 </div>
