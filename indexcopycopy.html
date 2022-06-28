@@ -1,4 +1,4 @@
-<html>
+<html id="html">
 
 <head>
   <title>Home | SciTech Portfolio</title>
@@ -17,22 +17,26 @@ html, body{
   margin:0;
   z-index:1;
   text-align: center;
+font-family: courier;
 background-color: black;
-font-family: verdana;
+
 
 }
 
 #logo{
-text-align:center;
-  width:140px;
-  height:auto;
-position: fixed;
-top:30px;
-left:0px;
-z-index:3;
-color:black;
+  text-align:center;
+    width:10vw;
+    min-width: 100px;
+    height:auto;
+  position: absolute;
+  top:30px;
+  left:0px;
+  z-index:3;
+  color:black;
+  margin-right: 50px;
+
 }
-#logo1{
+#logo-bottom{
 text-align:center;
 width:15vw;
 height:auto;
@@ -43,22 +47,20 @@ z-index:3;
 }
 
 .topnav {
-  background-color:;
+  background-color:white;
 }
 
 .topnav .a {
   float: left;
   text-align: center;
-  color: black;
-  width:10%;
+  color: white;
+  width:15vw;
   position: relative;
-  left:100px;
+  left:17%;
   margin-left:20px;
   padding: 40px;
-
 margin-right: 10px;
-
-  text-decoration: none;
+  font-family: courier;
   font-size: 17px;
 }
 
@@ -98,7 +100,7 @@ margin-right: 10px;
 .bar{
 	height: 5px;
 	width: 100%;
-	background-color: black;
+	background-color: white;
 	display: block;
 	border-radius: 5px;
 	transition: 0.3s ease;
@@ -112,10 +114,10 @@ margin-right: 10px;
 
 }
 .nav{
-	color:black;
+	color:white;
 	text-decoration: none;
 		position:absolute;
-	left:75%;
+	left:74%;
 		top:80;
 
 }
@@ -134,8 +136,9 @@ margin-right: 10px;
 }
 a {
   text-decoration: none;
-  color:black;
+  color:white;
 }
+
 
 
 .change .bar{
@@ -215,66 +218,64 @@ header.is-visible {
               filter 10s 2s ease-out;
   will-change: transform;
 }
+/*first section*/
 
-#title1{
-  color:black;
-  text-align: center;
-  position: relative;
-  width:25vw;
-  height:auto;
-  position:absolute;
-  top:150px;
-  left:10%;
-  z-index:2;
-  font-size: 2vw;
+.content{
 
-}
-#title{
+position: absolute;
+left:5vw;
+top:13vw;
+width:60%;
+height:0vw;
+
+
+
+}#title{
   color:white;
-  text-align: center;
-  position: relative;
-  width:30vw;
+  position: absolute;
+  width:5vw;
   height:auto;
-    background-color: black;
   position:absolute;
-  top:5%;
-  left:110%;
+  top:2vw;
+  left:12%;
   z-index:2;
-  font-size: 2vw;
-padding:10px;
+  font-size: 5vw;
 }
-#title2{
+#paragraph{
   color:white;
-  text-align: center;
-  position: relative;
-  width:30vw;
+  position: absolute;
+  width:0vw;
   height:auto;
   position:absolute;
-  top:33%;
-  left:110%;
-
+  top:7vw;
+  left:12%;
   z-index:2;
-  font-size: 2vw;
-    background-color: black;
-    padding:10px;
-
-}
-#title3{
+  font-size: 5vw;
+}#sub-paragraph{
   color:white;
-  text-align: center;
-  position: relative;
-  width:30vw;
+  position: absolute;
+  width:0vw;
   height:auto;
   position:absolute;
-  top:50%;
-  left:110%;
-
+  top:12vw;
+  left:12%;
   z-index:2;
-  font-size: 2vw;
-  background-color: black;
-  padding:10px;
-
+  font-size: 5vw;
 }
+#sub-text{
+  color:white;
+  text-align: left;
+  font-size: 1.5vw;
+  position: absolute;
+  left:13.5%;
+  top:20vw;
+  width:70%;
+  max-width: 700px;
+}
+
+/*end of section 1*/
+
+
 #title4{
   color:white;
   text-align: center;
@@ -284,7 +285,7 @@ padding:10px;
   position:absolute;
   top:30px;
   left:32.5%;
-
+z-index: 3;
   z-index:2;
   font-size: 3vw;
   background-color: black;
@@ -292,81 +293,17 @@ padding:10px;
 
 }
 
-.content{
-
-position: absolute;
-left:20%;
-top:1vw;
-width:60%;
-height:0vw;
-
-
-
-}
-.content1{
-
-position: absolute;
-top:68vw;
-left:0;
-
-width:50%;
-height:50vw;
-background-color: white;
 
 
 
 
-}
-.BG{
-position: absolute;
-height:68vw;
-width:100vw;
-background-color: white;
-
-
-}
-.BG1{
-position: absolute;
-height:55vw;
-width:50vw;
-top:65vw;
-background-color: black;
-border-radius: 10%;
-left:45%;
-
-
-}
-
-
-#image{
-  position: absolute;
-  top:80px;
-  left:8%;
-  width:50vw;
-  height:30vw;
-
-
-
-}
-#image1{
-  position: absolute;
-  top:0;
-  left:20%;
-  width:30vw;
-  height:40vw;
-  border-color: black;
-  border-top: 5px;
-  z-index:2;
-
-
-
-}
-#image2{
+#instagram{
   position: absolute;
   top:15.5vw;
   left:76%;
   width:5vw;
   height:5vw;
+  z-index: 3;
 
 
 
@@ -379,98 +316,192 @@ width:100%;
 height:24vw;
 position: absolute;
 top:150vw;
+z-index:3;
 color:WHITE;
+}
+
+/*grid*/
+
+.grid-container {
+  display: grid;
+  place-items:center;
+  gap: 10px;
+  background-color:black;
+  padding: 10px;
+  height:50vw;
+  width:10%;
+  position:absolute;
+  top:50vw;
+  padding-left: 3vw;
+padding-right: 10vw;
+align-self: center;
+
 
 
 }
-.learnmore{
 
-background-color: white;
-width:100%;
-height:30vw;
-position: absolute;
-top:120vw;
-
-
-
-}#learnmore{
-  position: absolute;
-  top:40%;
-  left: 25%;
+.grid-item {
+  background-color: #121218;
   text-align: center;
-color:black;
-width:50%;
-font-size: 3vw;
-border-width:4px;
-border-style: solid;
-border-radius: 10px;
-border-color: black;
-background-color:white;
+  padding: 10px;
+  font-size: 30px;
+  width:23vw;
+  border-radius:1em;
+  height:23vw;
+  align-items: center;
 
 }
 
+.item1 {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 1 / span 1;
+}
+
+.item3 {
+  grid-column: 3 / span 1;
+  grid-row: 1;
+}
+.item4 {
+  grid-column: 4 / span 1;
+  grid-row: 1;
+}
+.item5 {
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+.item6 {
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
+.item7 {
+  grid-column: 3 / span 1;
+  grid-row: 2;
+}
+.item8 {
+  grid-column: 4 / span 1;
+  grid-row: 2;
+}
+
+.intro{
+background-color: black;
+top:1000px;
 
 
+}#myVideo{
+position:fixed;
+z-index:10;
+height:auto;
+Width:100%;
+transform: translate(-50%, -50%);
+top:50%;
+left:50%;
 
+
+}
+#videoDiv{
+
+  position:absolute;
+width:100vw;
+height:100vh;
+background-color: black;
+z-index: 10;
+
+}
+
+.disableScroll{
+margin: 0;
+height: 100%;
+overflow: hidden;
+
+}
+.enableScroll{
+
+  margin: 0;
+  height: 100%;
+  overflow: visible;
+}
+.imageIcons{
+width:18vw;
+height:18vw;
+padding-top: 7.5%;
+position:relative;
+
+
+}
 </style>
-  <body>
+  <body onload="setTimeout(loadPage, 1);" >
 
 
-<div class="BG">
-</div>
 
-<div class="topnav">
-  <a  href="index.html"><img id="logo" src="LogoBlack.png"></a>
-  <a class="a"href="index.html">Home</a>
-  <a class="a"href="About.html">About</a>
-  <a class="a"href="Portfolio.html"> Portfolio</a>
-  <a class="a"href="Contact.html">Contact</a>
-</div>
+    <div class="topnav">
+      <a  href="index.html"><img id="logo" src="LogoWhite.png"></a>
+      <a  class="a"   href="index.html">Home</a>
+      <a  class="a"  href="About.html">About</a>
+      <a  class="a"  href="Portfolio.html"> Portfolio</a>
+      <a  class="a"  href="Contact.html">Contact</a>
 
-
-<div id="menu-bar">
-    <div id="menu" onclick="onClickMenu()">
-      <div id="bar1" class="bar"></div>
-      <div id="bar2" class="bar"></div>
-      <div id="bar3" class="bar"></div>
     </div>
-    <ul class="nav" id="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+
+
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+
+
+
+
+    </div>
+      <div class="content">
+      <p id="Title" > hi. </p>
+      <p id="Paragraph" > i'm  </p>
+      <p id="sub-paragraph" > thanh. </p>
+      <p id="sub-text" > I am a student enrolling at Port Credit Secondary School in the SciTech program. My passion is to create an environment where engineering, developing and art intersect.</p>
   </div>
 
-
-
-
-
-
+<div class="grid-container">
+  <div class="grid-item item1"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item2"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item3"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item4"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item5"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item6"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item7"><img src="" class="imageIcons" /></div>
+  <div class="grid-item item8"><img src="" class="imageIcons" /></div>
 </div>
-  <div class="content">
-  <p id="Title1" class="inline-photo show-on-scroll">Hi, I'm The Creator <br /> Thanh G. Diep! </p>
-  <image id="image" src="portrait.jpg" class="inline-photo show-on-scroll"></image>
-</div>
+
+    <div class="social">
+    <P id="Title4"> Connect with me on Instagram!</P>
+    <a href="https://www.instagram.com/thanhgdiep/"><image id="instagram" src= "https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-3.png"></image></a>
+<a href="index.html"><image id="logo-bottom" src="LogoWhite.png"></image></a>
+    </div>
 
 
-<div class="content1">
-<p id="Title" class="inline-photo show-on-scroll">I am a student currently enrolling in the SciTech Program at Port Credit Secondary School.</p>
-<p id="Title2" class="inline-photo show-on-scroll">I believe in patience, diligence, and preciseness. </p>
-<p id="Title3" class="inline-photo show-on-scroll">I always strive to accomplish my goals, and I have never stopped at any point of my life.</p>
-<image id="image1" src="Goals.png" class="inline-photo show-on-scroll"></image>
-</div>
-<div class="BG1" class="inline-photo show-on-scroll"></div>
-<div class="learnmore" class="inline-photo show-on-scroll">
 
-<a href="About.html"><button id="learnmore" class="inline-photo show-on-scroll">Learn More</button></a>
+<div id="videoDiv">
+</div>
+  <video id="myVideo" muted autoplay playsinline onended="endVideo()" >
+    <source src="H_1.mp4" type="video/mp4">
+    <source src="H_1.ogg" type="video/ogg">
+  </video> 
 
-</div>
-<div class="social">
-<P id="Title4"> Connect with me on Instagram!</P>
-<a href="https://www.instagram.com/thanhgdiep/"><image id="image2" src= "https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-3.png"></image></a>
-<a href="index.html"><image id="Logo1" src="LogoWhite.png"</a>
-</div>
+
 
 
 </body>
@@ -526,5 +557,28 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+
+function loadPage(){
+
+document.getElementById('html').classList.toggle("disableScroll");
+document.getElementById('myVideo').style.display="block";
+document.getElementById('myVideo').play();
+
+
+
+}
+
+
+function endVideo(){
+
+document.getElementById("videoDiv").style.display ="none";
+document.getElementById("myVideo").style.display ="none";
+document.getElementById("html").style.overflow ="visible";
+
+}
+
+
+
 
 </script>
